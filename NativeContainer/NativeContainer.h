@@ -35,7 +35,7 @@ public:
 			return {};
 		}
 
-		auto object = kManager->second->GetInstance<Interface>();
+		auto object = kManager->second->template GetInstance<Interface>();
 
 		return object;
 	}
